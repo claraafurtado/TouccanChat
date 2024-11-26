@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touccan Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="menu-lateral">
+      <button class="btn-voltar">&#8592;</button>
+    </div>
+
+    <div class="area-central">
+      <input type="text" class="barra-pesquisa" placeholder="Pesquisar conversa" />
+      <div class="linha-laranja"></div>
+      <div class="linha-preta"></div>
+
+      <div class="conversas">
+        <div class="conversa" id="conversa1">
+          <img src="./Imagem - Perfil.png" alt="Profile" class="icon-conversa" />
+          <div class="nome-conversa">Mari Silva</div>
+          <div class="mensagem-conversa">Oi, tudo bem?</div>
+          <div class="hora-conversa">10:30</div>
+        </div>
+
+        <div class="conversa" id="conversa2">
+          <img src="./Imagem - Perfil.png" alt="Profile" class="icon-conversa" />
+          <div class="nome-conversa">Lucas Santos</div>
+          <div class="mensagem-conversa">Olá</div>
+          <div class="hora-conversa">11:45</div>
+        </div>
+
+        <div class="conversa" id="conversa3">
+          <img src="./Imagem - Perfil.png" alt="Profile" class="icon-conversa" />
+          <div class="nome-conversa">Ana Souza</div>
+          <div class="mensagem-conversa">Está chegando?</div>
+          <div class="hora-conversa">12:00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lado-direito">
+      <div class="icone-mensagem">✉️</div>
+      <button class="btn-enviar">Enviar mensagem</button>
+    </div>
+  </div>
+
+  <div class="chat" id="chat1" style="display: none;">
+    <div class="chat-header">
+      <div class="btn-voltar-chat">&#8592;</div>
+      <div class="nome-pessoa-chat" id="nomePessoa1">Mari Silva</div>
+      <div class="linha-laranja"></div>
+    </div>
+
+    <div class="chat-conversa" id="chatConversa1">
+      <!-- Mensagens trocadas aparecerão aqui -->
+    </div>
+
+    <div class="input-mensagem">
+      <input type="text" class="input-texto" id="inputMensagem" placeholder="Digite sua mensagem" />
+      <button class="btn-enviar-chat" id="btnEnviar">Enviar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
